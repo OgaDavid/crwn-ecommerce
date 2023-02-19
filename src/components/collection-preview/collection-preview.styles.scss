@@ -1,6 +1,4 @@
 .collection-preview {
-  flex-direction: column;
-  margin: 30px;
 
   .title {
     font-size: 28px;
@@ -19,9 +17,5 @@
   .preview {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .collection-preview {
-    margin: 15px;
   }
 }
