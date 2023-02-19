@@ -1,0 +1,27 @@
+.collection-preview {
+  flex-direction: column;
+  margin: 30px;
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .preview {
+    display: grid;
+    column-gap: 1.5rem;
+    row-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .preview {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .collection-preview {
+    margin: 15px;
+  }
+}
