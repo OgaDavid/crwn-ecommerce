@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { auth, googleProvider } from "../../firebase/firebase.utils";
 import {
   createUserWithEmailAndPassword,
-  signInWithRedirect,
+  signInWithPopup,
   signOut,
 } from "firebase/auth";
 import "./signin.styles.scss";
@@ -37,7 +37,7 @@ const SignIn = () => {
   //   sign in with google
   const signInWithGoogle = async () => {
     try {
-      await signInWithRedirect(auth, googleProvider);
+      await signInWithPopup(auth, googleProvider);
     } catch (err) {
       console.error(err);
     }
