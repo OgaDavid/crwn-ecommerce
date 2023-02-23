@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { auth, googleProvider } from "../../firebase/firebase.utils";
-import {
-  createUserWithEmailAndPassword,
-  signInWithPopup,
-  signOut,
-} from "firebase/auth";
-import "./signin.styles.scss";
+import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import "./sign-in.styles.scss";
+import CustomButton from "../../components/custom-button/custom-button.component";
+import FormInput from "../../components/form-input/form-input.component";
 
 const SignIn = () => {
   const [formInput, setFormInput] = useState({
@@ -25,16 +23,6 @@ const SignIn = () => {
 
   console.log(auth?.currentUser?.email);
 
-  //   sign out
-  const signOut = async () => {
-    try {
-      await signOut(auth);
-    } catch (err) {
-      console.error(err);
-    }
-  };
-
-  //   sign in with google
   const signInWithGoogle = async () => {
     try {
       await signInWithPopup(auth, googleProvider);
@@ -61,27 +49,30 @@ const SignIn = () => {
       <span>Sign in with your email and password.</span>
 
       <form onSubmit={handleSubmit}>
-        <input
-          onChange={handleChange}
+        <FormInput
+          handleChange={handleChange}
           name="email"
           type="email"
           value={formInput.email}
           required
+          label="email"
         />
-        <label htmlFor="email">Email</label>
-        <input
-          onChange={handleChange}
+        <FormInput
+          handleChange={handleChange}
           name="password"
           type="password"
           value={formInput.password}
+          label="password"
         />
-        <label htmlFor="password">Password</label>
-        <button onClick={signInWithEmailAndPassword} type="submit">
-          Sign in
-        </button>
+        <div className="buttons">
+          <CustomButton onClick={signInWithEmailAndPassword} type="submit">
+            Sign in
+          </CustomButton>
+          <CustomButton type="submit" onClick={signInWithGoogle} isGoogleSignIn>
+            Sign in with google
+          </CustomButton>
+        </div>
       </form>
-      <button onClick={signInWithGoogle}>Sign in with google</button>
-      <button onClick={signOut}>Sign out</button>
     </div>
   );
 };
