@@ -1297,6 +1297,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/firebase@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "@types/firebase@npm:3.2.1"
+  dependencies:
+    firebase: "*"
+  checksum: 0459d9dd3c08c67955bc2e594628b37de061c59105a52f899a13da810e754b70440607b2ffe81d6afd48ec1254ead7a3ca3a9809b15a013d9720d6f7a972a103
+  languageName: node
+  linkType: hard
+
 "@types/glob@npm:*":
   version: 8.0.1
   resolution: "@types/glob@npm:8.0.1"
@@ -2563,6 +2572,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "crwn-app@workspace:."
   dependencies:
+    "@types/firebase": ^3.2.1
     "@types/react": ^18.0.27
     "@types/react-dom": ^18.0.10
     "@vitejs/plugin-react": ^3.1.0
@@ -3346,7 +3356,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase@npm:^9.17.1":
+"firebase@npm:*, firebase@npm:^9.17.1":
   version: 9.17.1
   resolution: "firebase@npm:9.17.1"
   dependencies:

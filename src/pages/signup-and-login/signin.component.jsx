@@ -21,7 +21,7 @@ const SignIn = () => {
     setFormInput({ email: "", password: "" });
   }
 
-  console.log(auth?.currentUser?.email);
+  // console.log(auth?.currentUser?.email);
 
   const signInWithGoogle = async () => {
     try {

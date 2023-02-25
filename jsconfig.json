@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "target": "ES6"
+    },
+    "include": [
+      "src/**/*.js",
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "node_modules"
+    ],
+    "typeAcquisition": {
+      "include": [
+        "firebase"
+      ]
+    }
+  }
+  

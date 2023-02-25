@@ -28,6 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@types/firebase", "npm:3.2.1"],\
             ["@types/react", "npm:18.0.28"],\
             ["@types/react-dom", "npm:18.0.11"],\
             ["@vitejs/plugin-react", "virtual:2acad47bb343b374ef8b2c8f738bf06999e26a61678ad6f36c32ae1fa6e20e31bd5cd402e9a8ed75147e85991707a28ef26b3137e0529550b9511fb894f04fd2#npm:3.1.0"],\
@@ -2006,6 +2007,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/firebase", [\
+        ["npm:3.2.1", {\
+          "packageLocation": "./.yarn/cache/@types-firebase-npm-3.2.1-8843ce3f13-0459d9dd3c.zip/node_modules/@types/firebase/",\
+          "packageDependencies": [\
+            ["@types/firebase", "npm:3.2.1"],\
+            ["firebase", "npm:9.17.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/glob", [\
         ["npm:8.0.1", {\
           "packageLocation": "./.yarn/cache/@types-glob-npm-8.0.1-74f795a4ac-98f3d0403c.zip/node_modules/@types/glob/",\
@@ -3460,6 +3471,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["crwn-app", "workspace:."],\
+            ["@types/firebase", "npm:3.2.1"],\
             ["@types/react", "npm:18.0.28"],\
             ["@types/react-dom", "npm:18.0.11"],\
             ["@vitejs/plugin-react", "virtual:2acad47bb343b374ef8b2c8f738bf06999e26a61678ad6f36c32ae1fa6e20e31bd5cd402e9a8ed75147e85991707a28ef26b3137e0529550b9511fb894f04fd2#npm:3.1.0"],\
